@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotifiCan</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__navigation">
+                <a class="header__button" href="/">
+                    Главная
+                </a>
+                <a class="header__button" href="/data">
+                    Данные
+                </a>
+                <a class="header__button header__button_focused" href="/addHandle">
+                    Добавить
+                </a>
+            </div>
+            <div class="header__support"></div>
+        </div>
+        <div class="devider"></div>
+    </div>
+
+    <div id="coordinatesDisplay" class="coordinatesDisplay onLeftTop">
+        <div class="coordinatesDisplay__line">
+            <div class="coordinatesDisplay__label">
+                Longitude
+            </div>
+            <input id="coordinatesLongitude" type="text" placeholder="longitude" class="coordinatesDisplay__input" />
+        </div>
+        <div class="devider"></div>
+        <div class="coordinatesDisplay__line">
+            <div class="coordinatesDisplay__label">
+                Latitude
+            </div>
+            <input id="coordinatesLatitude" type="text" placeholder="latitude" class="coordinatesDisplay__input"/>
+        </div>
+        <div class="coordinatesDisplay__line">
+            <div class="coordinatesDisplay__buttonBar">
+                <button href="" class="coordinatesDisplay__link" onclick="fillForm()">Back</button>
+                <button class="coordinatesDisplay__button" onclick="copyData()">
+                    <img src="/static/imgs/copy.png" height="16" width="16">
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div id="map" class="mapContainer"></div>
+</body>
+<script src="/static/pickerScript.js"></script>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotifiCan</title>
+    <link rel="stylesheet" href="../static/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__navigation">
+                <a class="header__button header__button_focused" href="/">
+                    Главная
+                </a>
+                <a class="header__button" href="/data">
+                    Данные
+                </a>
+                <a class="header__button" href="/addHandle">
+                    Добавить
+                </a>
+            </div>
+            <div class="header__support"></div>
+        </div>
+        <div class="devider"></div>
+    </div>
+
+    <div class="content">
+        <div class="mainTitle">
+            <div class="mainTitle__title anim-item">NotifiCan M</div>
+            <div class="devider mainTitle__devider anim-item"></div>
+            <p class="mainTitle__text anim-item">
+                Мониторинг наполненности баков. Оптимальные маршруты. Своевременный вывоз
+            </p>
+        </div>
+
+        <div class="imageBlock anim-item">
+            <img src="/static/imgs/both.png">
+        </div>
+
+        <div class="dualBlock" style="background-color: #006633;">
+            <div class="dualBlock__ghost"></div>
+            <div class="dualBlock__inner">
+                <div class="dualBlock__label dualBlock__element anim-item">
+                    <p class="dualBlock__title">
+                        <font class="themeColor">Размещение</font>
+                    </p>
+                    <p class="dualBlock__text colorWhite">
+                        Устройство крепится на внутреннюю сторону контейнера и направляется на диагонально противоположное ребро. Специальный алгоритм калибровки помогает расположить его в нужном положении, что обеспечивает высокую точность получаемой информации
+                    </p>
+                </div>
+                <div class="dualBlock__imageContainer dualBlock__element anim-item">
+                    <img class="dualBlock__image" src="/static/imgs/inCan.png">
+                </div>
+            </div>
+        </div>
+
+        <div class="dualBlock" style="background-color: #F2BC49;">
+            <div class="dualBlock__ghost"></div>
+            <div class="dualBlock__inner dualBlock__vertical">
+                <div class="dualBlock__label dualBlock__element anim-item">
+                    <p class="dualBlock__title">
+                        Схема
+                    </p>
+                </div>
+                <div class="dualBlock_imageContainer dualBlock__element anim-item" style="padding: 0px 20px">
+                    <img class="dualBlock__image" src="/static/imgs/open.png">
+                </div>
+                <div class="dualBlock__label dualBlock__element anim-item">
+
+                    <p class="dualBlock__text colorWhite" style="width: 60%; text-align: center;">
+                        Схема устройства состоит из четырех главных частей. Микроконтроллер WEMOS D1 MINI, ToF-сесора, транзистора и светодиода 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dualBlock" style="background-color: #696ED1;">
+            <div class="dualBlock__ghost"></div>
+            <div class="dualBlock__inner dualBlock__vertical">
+                <div class="dualBlock__label dualBlock__element anim-item">
+                    <p class="dualBlock__title" style="color: #D8A1F2">
+                        Корпус
+                    </p>
+                </div>
+                <div class="dualBlock_imageContainer dualBlock__element anim-item" style="padding: 0px 20px">
+                    <img class="dualBlock__image" src="/static/imgs/boddy.png">
+                </div>
+                <div class="dualBlock__label dualBlock__element anim-item">
+
+                    <p class="dualBlock__text colorWhite" style="width: 60%; text-align: center;">
+                        Корпус напечатан на 3D принтере при помощи перерабатываемого PETG пластика. У устройства повышена антивандальная защита и прочность. 
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="dualBlock" style="background-color: #792D35;">
+            <div class="dualBlock__ghost"></div>
+            <div class="dualBlock__inner">
+                <div class="dualBlock__label dualBlock__element anim-item">
+                    <p class="dualBlock__title"  style="![](../../../Desktop/webOnMac.png)color: #FF8A7F">
+                        <font>WEB-интерфейс</font>
+                    </p>
+                    <p class="dualBlock__text colorWhite">
+                        На сервере управляющая компания регистрирует новые устройства и отображает уровни наполненности мусорных баков в виде меток зеленого, желтого и красного цвета.
+                    </p>
+                </div>
+                <div class="dualBlock__imageContainer dualBlock__element anim-item">
+                    <img class="dualBlock__image" src="/static/imgs/webOnMac.png">
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="../static/baseScript.js"></script>
+</html>

@@ -1,0 +1,93 @@
+.body {
+	padding: 0;
+	margin: 0;
+}
+
+.present {
+	margin: 20px auto;
+	position: realtive;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.present__subtitle {
+	color: black;
+	font-size: 14px;
+	font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 400;
+}
+
+.present__title {
+	color: #FFA266FF;
+	font-size: 300px;
+	font-family:  "SF Pro Rounded", system-ui, san-serif;
+	font-weight: 500;
+}
+
+.present__parametersLink {
+	color: black;
+	font-size: 14px;
+	font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+	font-weight: 400;
+}
+
+.header__content {
+	position: relative;
+	height: 100%;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.header__logo {
+	flex: 0.3;
+}
+
+.header__navigation {
+	position: relative;
+	height: 100%;
+	flex: 0.4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.header__support {
+	flex: 0.3;
+}
+
+.header__button {
+	flex: 0.3;
+	border-radius: 6px;
+	height: 28px;
+	line-height: 28px;
+	vertical-align: center;
+	text-align: center;
+	color: black;
+	font-size: 16px;
+	font-weight: 600;
+	font-family:  -apple-system, BlinkMacSystemFont, sans-serif;
+	text-decoration: none;
+}
+
+.header__button:hover {
+	background-color: whitesmoke;
+}
+
+.header__button:active {
+	color: #FFA266FF;
+}
+
+.header__button_focused {
+	color: #FFA266FF;
+}
+
+.devider {
+	margin: 0 auto;
+	height: 1px;
+	width: 100%;
+	background-color: #E4E1E5FF;
+}

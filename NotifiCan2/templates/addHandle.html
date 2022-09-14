@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotifiCan</title>
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__navigation">
+                <a class="header__button" href="/">
+                    Главная
+                </a>
+                <a class="header__button" href="/data">
+                    Данные
+                </a>
+                <a class="header__button header__button_focused" href="/addHandle">
+                    Добавить
+                </a>
+            </div>
+            <div class="header__support"></div>
+        </div>
+        <div class="devider"></div>
+    </div>
+
+    <div class="content">
+        <div class="navigationLabel">
+            Параметры устройства
+        </div>
+        <div class="parameterInput">
+            <div class="parameterInput__label">Идентификатор</div>
+            <input id="identificator" class="parameterInput__input_identifier" placeholder="000000" value="{{ identifier }}">
+        </div>
+        <div class="parameterInput">
+            <div id="wifi" class="parameterInput__label">Настройки WiFi</div>
+            <div class="parameterInput__stack_horisontal">
+                <input id="ssid" class="parameterInput__input halfStack" placeholder="SSID" type="text" value="{{ ssid }}">
+                <div id="passwordField" class="parameterInput__input_withButton parameterInput__stack_horisontal halfStack">
+                    <input id="passwordToggle" class="parameterInput__input_empty" placeholder="Password" type="password" value="{{ password }}">
+                    <button class="parameterInput__input_button" onclick="switchPasswordVisibility()">
+                        <img src="/static/imgs/eye_icon.png" height="16" width="16">
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="parameterInput">
+            <div class="parameterInput__label">Геопозиция</div>
+            <div class="parameterInput__stack_horisontal">
+                <input id="lat" class="parameterInput__input halfStack" placeholder="Широта" value="{{ latitude }}">
+                <input id="lon" class="parameterInput__input halfStack" placeholder="Долгота" value="{{ longitude }}">
+                <a class="parameterInput__button" href="/mapPicker">
+                    На карте
+                </a>
+            </div>
+        </div>
+        <div class="addButton">
+            <button class="addButton__button" onclick="submitData()">Добавить</button>
+        </div>
+    </div>
+
+    <span id="errorMessage" class="errorMessage">
+        <span class="errorMessage__button" onclick="rollBack()"></span>
+        <span id="errorMessage__text" class="errorMessage__text"></span>
+    </span>
+</body>
+<script src="/static/script.js"></script>
+</html>

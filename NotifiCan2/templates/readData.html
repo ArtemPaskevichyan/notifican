@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Read</title>
+	<meta http-equiv="refresh" content="15">
+	<link rel="stylesheet" href="/static/readStyle.css" type="text/css">
+</head>
+<body>
+	<div class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__navigation">
+                <a class="header__button" href="/">
+                    Главная
+                </a>
+                <a class="header__button header__button_focused" href="/readData/1">
+                    Данные
+                </a>
+                <a class="header__button" href="/addHandle">
+                    Добавить
+                </a>
+            </div>
+            <div class="header__support"></div>
+        </div>
+        <div class="devider"></div>
+    </div>
+
+	<div class="present">
+		<div class="present__subtitle">
+			Устройство с идентификатором {{ identificator }} заполнено на
+		</div>
+		<div class="present__title">
+			{{ value }} %
+		</div>
+		<a href="" class="present__parametersLink">
+			Дополнинельные параметры
+		</a>
+	</div>
+</body>
+</html>

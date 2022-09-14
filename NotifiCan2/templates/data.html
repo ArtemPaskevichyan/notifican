@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>NotifiCan</title>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="/static/style.css" type="text/css">
+</head>
+<body>
+    <div class="header">
+        <div class="header__content">
+            <div class="header__logo"></div>
+            <div class="header__navigation">
+                <a class="header__button" href="/">
+                    Главная
+                </a>
+                <a class="header__button header__button_focused" href="/data">
+                    Данные
+                </a>
+                <a class="header__button" href="/addHandle">
+                    Добавить
+                </a>
+            </div>
+            <div class="header__support"></div>
+        </div>
+        <div class="devider"></div>
+    </div>
+
+    <div id='map' class="mapContainer"></div>
+
+    <div class="modal" id="modal">
+        <div class="modal_header">
+            <div style="flex: 0.99;" class="navigationLabel">
+                Параметры устройства
+            </div>
+            <div class="modal_closeButtonHolder">
+                <div class="errorMessage__button" onclick="modalRelease()"></div>
+            </div>
+        </div>
+        <div class="parameterInput">
+            <div class="parameterInput__label">Идентификатор</div>
+            <div class="parameterInput__stack_horisontal">
+                <input id="identificator" class="parameterInput__input_identifier" placeholder="000000">
+                <div class="modal_title" id="value"></div>
+            </div>
+        </div>
+        <div class="parameterInput">
+            <div id="wifi" class="parameterInput__label">Настройки WiFi</div>
+            <div class="parameterInput__stack_horisontal">
+                <input id="ssid" class="parameterInput__input halfStack" placeholder="SSID" type="text">
+                <div id="passwordField" class="parameterInput__input_withButton parameterInput__stack_horisontal halfStack">
+                    <input id="passwordToggle" class="parameterInput__input_empty" placeholder="Password" type="text">
+                </div>
+            </div>
+        </div>
+        <div class="parameterInput">
+            <div class="parameterInput__label">Геопозиция</div>
+            <div class="parameterInput__stack_horisontal">
+                <input id="lat" class="parameterInput__input halfStack" placeholder="Широта">
+                <input id="lon" class="parameterInput__input halfStack" placeholder="Долгота">
+            </div>
+        </div>
+    </div>
+    <div class="overlay" id="overlay" onclick="modalRelease()"></div>
+</body>
+<script src="/static/dataScript.js"></script>
+</html>
+
+
+
+<!-- <script>
+mapboxgl.accessToken = 'pk.eyJ1IjoiYXJ0eW9tcGFza2V2aWNoeWFuIiwiYSI6ImNremJvNnRvMDAxZWEybnFncmt1YmpydnkifQ.HU4Qhi34Mu8ohOShn5snHw';
+var map = new mapboxgl.Map({
+container: 'map',
+style: 'mapbox://styles/mapbox/streets-v11'
+});
+</script> -->
